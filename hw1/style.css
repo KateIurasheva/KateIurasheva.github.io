@@ -1,0 +1,67 @@
+body{
+	background: #eeeeee;
+	height: 806px;
+	width: 1440px;
+}
+.main{
+	height: 750px;
+	width: 514px;
+	background: white;
+	margin-left: 455px;
+	box-shadow: 0 0 3px 1px #cecece;
+}
+.main h2{
+	padding-top: 45px;
+	text-align:center;
+	margin-top:0;
+}
+img{
+	padding-left: 192px;
+	width: 130px;
+}
+.main p{
+	margin-left: 65px;
+	margin-top: 7px;
+	letter-spacing: 0.7px;
+}
+.front{
+	border-top: solid 1px #7a7a7a;
+	padding-left: 13px;
+	padding-top: 25px;
+	margin-left: 50px;
+	margin-right: 50px;
+	line-height: 25px;
+	letter-spacing: 0.7px;
+}
+.list{
+	padding-top: 10px;
+	padding-left: 5px;
+	margin-left: 45px;
+	line-height: 26px;
+	letter-spacing: 0.7px;
+}
+.tel{
+	border-top: solid 1px #7a7a7a;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-top: 22px;
+	padding-left: 13px;
+	line-height: 26px;
+	letter-spacing: 0.7px;
+}
+.vk{
+	border-bottom: solid 1px #7a7a7a;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 15px;
+	padding-top: 26px;
+	padding-left: 13px;
+	line-height: 26px;
+	letter-spacing: 0.7px;
+}
+.feedback{
+	margin-left: 63px;
+	padding-top: 22px;
+	line-height: 27px;
+	letter-spacing: 0.7px;
+}
