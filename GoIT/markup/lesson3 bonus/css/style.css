@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Arial, sans-serif;
+}
+.main{
+	height: 883px;
+	width: 960px;
+	margin: 0 auto;
+	background:url(../img/background.jpg) no-repeat;
+	color: white;
+}
+.logo{
+	padding-top: 60px;
+	margin-left: 70px;
+}
+.contacts{
+	position: absolute;
+	top:150px;
+	left:1010px;
+	font-size: 10px;
+	line-height: 15px;
+}
+.content{
+	margin-left: 70px;
+	margin-top: -5px;
+}
+.photo{
+	display: inline-block;
+}
+.caption{
+	margin-bottom: 40px;
+	margin-top: -5px;
+	text-align: center;
+}
+.footer{
+	font-size: 11px;
+	margin-left: 400px;
+	margin-top: 145px;
+}
