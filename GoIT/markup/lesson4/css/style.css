@@ -7,7 +7,6 @@ body{
 	background: url(../img/background.jpg) repeat-x;
 }
 .main{
-	height: 1030px;
 	width: 1000px;
 	margin: 0 auto;
 	box-shadow: 0 0 10px 0 black;
@@ -69,7 +68,7 @@ body{
 .main-menu>li{
 	position: relative;
 	display: inline-block;
-	height:22px;
+	height: 22px;
 	padding-top: 7px;
 	padding-left: 63px;
 	font-size: 14px;
@@ -79,27 +78,23 @@ body{
 	color: white;
 	text-decoration: none;
 }
-.main-menu .sub-menu {
+.main-menu .sub-menu{
     position: absolute;
     top: 30px;
-    width: 150px;
-    height: 125px;
+    width: 130px;
+    height: 130px;
     list-style: none;
     background: #333333;
    	left: 55px;
 }
 .main-menu .sub-menu a{
    padding-left: 9px;
-   padding-top: 4px;
-   padding-bottom: 4px;
+   padding-top: 8px;
 }
 .main-menu>li .sub-menu{
 	display: none;
 }
 .main-menu>li:hover .sub-menu{
-	display: block;
-}
-.main-menu .opened .sub-menu{
 	display: block;
 }
 .content{
@@ -120,10 +115,11 @@ body{
 .news{
 	float: right;
 }
-.footer{
+.footer {
+	margin: 0 auto;
+	width:210px;
 	color: white;
 	font-size: 12px;
-	padding-left: 43%;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
