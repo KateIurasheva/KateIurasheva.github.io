@@ -14,32 +14,39 @@ body{
 	overflow: hidden;
 	border-bottom: solid 3px black;
 }
-.header{
-	height: 213px;
-	position: relative;
-}
-.header>img{
+.header .logo{
+	float: left;
+	width: 283px;
+	height: 164px;
 	padding-top: 49px;
 	padding-left: 30px;
-	float: left;
-	margin-right: 310px;
 }
 .contacts{
-	position: absolute;
-	right: 30px;
-	top: 45px;
+	float:left;
+	margin-left: 530px;
+	margin-top: 45px;
 	line-height: 18px;
 	font-size: 12px;
 	color: #128aa7;
 }
-.flag{
-	display: inline-block;
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.flag {
+	margin-left: 640px;
+	list-style: none;
+}
+.flag  li{
 	float: left;
-	width:60px;	
-	margin-top: 150px;
-	line-height: 10px;
-	text-align: center;
 	font-size: 10px;
+	text-align: center;
+	padding-right: 13px;
+	margin-top: 30px;
+}
+.flag a{
+	display: block;
 }
 .photo{
 	margin-bottom: 5px;
@@ -73,7 +80,7 @@ body{
 	padding-left: 63px;
 	font-size: 14px;
 }
-.main-menu li a{
+.main-menu>li a{
 	display: block;
 	color: white;
 	text-decoration: none;
@@ -123,4 +130,3 @@ body{
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
-
