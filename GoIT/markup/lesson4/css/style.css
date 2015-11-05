@@ -57,52 +57,64 @@ body{
 	border-top: solid 1px #128aa7;
 	border-bottom: solid 1px #128aa7;
 }
-.menu{
-	position: relative;
-}
-.menu img{
-	position: absolute;
-	left: 275px;
-	top: 12px;
-}
 .main-menu{
-	width: 1000px;
-	list-style: none;
-	background: #333333;
-	border-bottom: solid 1px black;
-	box-shadow: 0 3px 5px -3px black;
+	border-bottom: 1px solid #000;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
+	background: rgb(55,55,55); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,55,55,1)), color-stop(100%,rgba(48,48,48,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
-.main-menu>li{
+.main-menu li{
 	position: relative;
-	display: inline-block;
-	height: 22px;
-	padding-top: 7px;
-	padding-left: 63px;
-	font-size: 14px;
+  	float: left;
+  	list-style: none;
 }
-.main-menu>li a{
-	display: block;
-	color: white;
-	text-decoration: none;
+.main-menu li a{
+	position: relative;
+  	padding: 0 33px;
+  	display: block;
+  	line-height: 28px;
+  	color: #fff;
+  	text-decoration: none;
+  	font-size: 14px;
 }
-.main-menu .sub-menu{
-    position: absolute;
-    top: 30px;
-    width: 130px;
-    height: 130px;
-    list-style: none;
-    background: #333333;
-   	left: 55px;
+.main-menu ul{
+   	position: absolute;
+  	left: 23px;
+  	visibility: hidden;
+  	top: 0;
+  	opacity: 0;
+  	transition: all 0.5s;
 }
-.main-menu .sub-menu a{
-   padding-left: 9px;
-   padding-top: 8px;
+.main-menu ul+a:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 10px;
+  height: 6px;
+  width: 5px;
+  background: url(../img/triangle.png) 0 0 no-repeat;
 }
-.main-menu>li .sub-menu{
-	display: none;
+.main-menu li:hover ul{
+	visibility: visible;
+ 	opacity: 1;
+  	top: 100%;
 }
-.main-menu>li:hover .sub-menu{
-	display: block;
+.main-menu ul li{
+	background: #303030;
+}
+.main-menu ul a{
+  	padding: 0 10px;
 }
 .content{
 	width: 210px;
@@ -114,7 +126,7 @@ body{
 	line-height: 24px;
 	border-right: solid 2px #c7cacf;
 	border-left: solid 2px #c7cacf;
-	margin-top: 2px;
+	color: #424c43;
 }
 .sidebar{
 	float: left;
