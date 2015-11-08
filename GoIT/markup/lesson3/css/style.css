@@ -4,20 +4,15 @@
 }
 body{
 	font-family: Arial, sans-serif;
+	font-size: 14px;
 }
 .main{
-	width: 1060px;
+	width: 960px;
 	margin: 0 auto;
 	box-shadow: 0 0 3px 1px #cecece;
+	padding:50px;
 }
-.main .logo{
-	padding-top: 50px;
-	margin-left: 46px;
-	font-size: 25px;
-}
-.menu ul{
-	width: 966px;
-	margin-left: 46px;
+.menu{
 	margin-top: 40px;
 	background: #515151;
 	list-style: none;
@@ -40,11 +35,12 @@ body{
 	color:white;
 	text-decoration: none;
 }
+.conteiner{
+	padding: 40px 0 20px;
+}
 .sidebar ul{
 	float: left;
 	width: 240px;
-	margin-left: 46px;
-	margin-top: 40px;
 	list-style: none;	
 }
 .sidebar li a{
@@ -55,7 +51,6 @@ body{
 	border: solid 1px #c8c8c8;
 	margin-bottom: -1px;
 	color:#656363;
-	font-size: 14px;
 	text-decoration: none;
 }
 .sidebar li a:hover{
@@ -63,19 +58,18 @@ body{
 	background: #f9f9f9;
 	color:#2c2c2c;
 }
+.content{
+	margin: 0 0px 20px 20px;
+	font-size: 14px;
+	color: #2c2c2c;
+	line-height: 21px;
+	float: right;
+}
 .photo{
-	float: left;
-	margin-top: 40px;
-	margin-left: 48px;
+	margin-bottom: 30px;
 }
 .content p{
-	float: right;
 	width:645px;
-	margin-right: 55px;
-	margin-top: 30px;
-	font-size: 14px;
-	color:#2c2c2c;
-	line-height: 21px;
 }
 .clearfix:after{
 	content: '';
@@ -84,8 +78,6 @@ body{
 }
 .footer{
 	height:40px;
-	width: 966px;
-	margin-left: 46px;
 	margin-top: 60px;
 	background: #e1e1e1;
 }
@@ -98,7 +90,6 @@ body{
 .footer .menu-f li{
 	display: inline-block;
 	height:28px;
-	font-size: 14px;
 }
 .footer .menu-f li a{
 	display: block;
@@ -109,7 +100,6 @@ body{
 }
 .footer p{
 	float: right;
-	font-size: 14px;
 	padding-top: 12px;
 	margin-right: 20px;
 }
