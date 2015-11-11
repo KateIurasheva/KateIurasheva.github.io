@@ -35,15 +35,16 @@ body{
 	clear: both;
 }
 .flag {
-	margin-left: 640px;
+	float: right;
+	margin-right: 15px;
 	list-style: none;
 }
 .flag  li{
 	float: left;
 	font-size: 10px;
 	text-align: center;
-	padding-right: 13px;
 	margin-top: 30px;
+	margin-right: 13px;
 }
 .flag a{
 	display: block;
@@ -95,15 +96,15 @@ body{
   	transition: all 0.5s;
 }
 .main-menu ul+a:after{
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  margin-top: -2px;
-  right: 10px;
-  height: 6px;
-  width: 5px;
-  background: url(../img/triangle.png) 0 0 no-repeat;
+  	content: '';
+  	display: block;
+  	position: absolute;
+  	top: 50%;
+  	margin-top: -2px;
+  	right: 10px;
+  	height: 6px;
+  	width: 5px;
+  	background: url(../img/triangle.png) 0 0 no-repeat;
 }
 .main-menu li:hover ul{
 	visibility: visible;
@@ -116,7 +117,7 @@ body{
 .main-menu ul a{
   	padding: 0 10px;
 }
-.content{
+ .content{
 	width: 210px;
 	background: #edeef0;
 	padding-bottom: 20000px;
@@ -128,17 +129,15 @@ body{
 	border-left: solid 2px #c7cacf;
 	color: #424c43;
 }
-.sidebar{
+.container .sidebar{
 	float: left;
 }
-.news{
+.container .news{
 	float: right;
 }
 .footer {
-	margin: 0 auto;
+	margin: 5px auto 0;
 	width:210px;
 	color: white;
 	font-size: 12px;
-	margin-top: 5px;
-	margin-bottom: 10px;
 }
