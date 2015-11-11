@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 500px;
+	margin: 0 auto;
+}
+table{
+	border-spacing: 0;
+	border-collapse: collapse;
+	border: hidden;
+	width: 500px;
+	height: 570px;
+}
+td {
+	border: 5px solid black;
+}
+.red{
+	background: #fe5f39;
+}
+.yellow{
+	background: #fff35e;
+}
+.blue{
+	background: #185998;
+}
+.black{
+	background: #1b1b1b;
+}
+.cell{
+	height: 60px;
+}
+.cell2{
+	width: 4px;
+}
+.cell3{
+	height: 140px;
+}
+.cell4{
+	border-right: hidden;
+}
