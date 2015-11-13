@@ -147,7 +147,7 @@ form button[type="submit"]{
 	border-radius: 5px;
 	font-size: 14px;
 	margin-left: 205px;
-
+	margin-bottom: 15px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,50aedb+0,2e7ac4+100,2e7ac4+100 */
     background: rgb(30,87,153); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(80,174,219,1) 0%, rgba(46,122,196,1) 100%, rgba(46,122,196,1) 100%); /* FF3.6+ */
@@ -158,11 +158,10 @@ form button[type="submit"]{
     background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(80,174,219,1) 0%,rgba(46,122,196,1) 100%,rgba(46,122,196,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
 }
-button[type="submit"]+p{
+button[type="submit"]+p, p:last-child{
 	color: white;
 	font-size: 11px;
 	text-align: center;
-	margin-top: 15px;
 	line-height: 16px;
 }
 form label{
