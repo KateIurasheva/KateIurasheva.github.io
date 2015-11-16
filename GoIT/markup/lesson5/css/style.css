@@ -15,13 +15,11 @@
 body{
 	font-family: 'Helvetica Neue', Arial;
 	font-size: 14px;
-}
-.main{
-	width: 1215px;
-	margin: 0 auto;
+	background: url(../img/background2.jpg) fixed top no-repeat;
+	background-size: cover;
 }
 .header{
-	background: url(../img/header.png) no-repeat;
+	background: url(../img/header.png) repeat-x;
 }
 .clearfix:after{
 	content: '';
@@ -29,10 +27,9 @@ body{
 	clear: both;
 }
 .menu{
-	margin-left: 456px;
+	margin-left: 535px;
 }
 .menu li{
-	position: relative;
   	float: left;
   	list-style: none;
 }
@@ -115,18 +112,16 @@ body{
 }
 .wrapper{
 	position: relative;
-	height: 1028px;
-	background: url(../img/background.jpg) no-repeat;
+	height: 1044px;
 }
 .container{
 	width: 560px;
 	height: 610px;
 	position: absolute;
-	margin: auto;
-  	top: 0;
-    left: 0; 
-    bottom: 0; 
-    right: 0;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -280px;
+    margin-bottom: -305px;
 }
 .container .cadastre{
 	font-size: 24px;
