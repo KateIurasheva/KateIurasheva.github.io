@@ -13,7 +13,7 @@
     font-style: normal;
 }
 body{
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Arial;
 	font-size: 14px;
 }
 .main{
@@ -128,7 +128,7 @@ body{
     bottom: 0; 
     right: 0;
 }
-.container div:first-child{
+.container .cadastre{
 	font-size: 24px;
 	color:white;
 	width: 347px;
@@ -188,7 +188,7 @@ form button[type="submit"]{
     background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(80,174,219,1) 0%,rgba(46,122,196,1) 100%,rgba(46,122,196,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
 }
-button[type="submit"]+div p{
+.text p{
 	color: white;
 	font-size: 11px;
 	text-align: center;
@@ -207,15 +207,48 @@ input:focus{
 	-moz-box-shadow: 0px 0px 5px 3px rgba(75,135,175,1);
 	box-shadow: 0px 0px 5px 3px rgba(75,135,175,1);
 }
-form a{
+form .facebook{
 	margin-left: 140px;
 }
-form a+p{
+form .facebook>a{
+	display: block;
+	float: left;
+	font-family: Arial;
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 35px;
+	background: linear-gradient(#3e5692, #2f4473);
+}
+form .facebook a:first-child{
+	height: 27px;
+	padding: 7px 13px 0 15px;
+	border-right: solid 1px #1d3c75;
+	border-top: solid 1px #7889b7;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+form .facebook a:last-child{
+	height: 34px;
+	padding-left: 31px;
+	border-left: solid 1px #4b68ac;
+	border-top: solid 1px #7889b7;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-weight: bold;
+}
+form .facebook a:last-child img{
+	padding-left: 23px;
+	padding-right: 36px;
+}
+form .facebook a:last-child span{
+	font-weight: normal;
+}
+form .ou{
 	color: #999999;
 	position: relative;
 	margin: 28px 0 28px 267px;
 }
-form a+p:after{
+form .ou:after{
   	content: '';
   	display: block;
   	position: absolute;
@@ -225,7 +258,7 @@ form a+p:after{
   	width: 123px;
   	background: url(../img/border.png) 0 0 no-repeat;
 }
-form a+p:before{
+form .ou:before{
   	content: '';
   	display: block;
   	position: absolute;
