@@ -37,40 +37,63 @@ body{
   	list-style: none;
 }
 .menu li a{
-  	padding: 0 12px;
+  	padding: 0 14px;
   	display: block;
   	line-height: 36px;
   	color: #60b5ed;
   	text-decoration: none;
 }
-.menu li:last-child a{
-  	color: white;
-  	padding-left: 65px;
-}
-.menu li:last-child:before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: 2px;
-	left:16px;
-	height: 31px;
-	width: 43px;
-	background: url(../img/flag2.png) 0 0 no-repeat;
-}
-.menu li:hover:not(:last-child) a{
+.menu li:hover a{
 	color:white;
 	background: #4eabda;
 }
-.menu+p{
+.header ul+div{
 	float: left;
-	padding: 0 13px;
-  	line-height: 35px;
-  	color:white;
+	width: 1px;
+	height: 31px;
+	background: #56a2dc;
+	margin-top: 2px;
+	margin-left: 11px;
+}
+.menu2 li:first-child{
+  	margin-left: 19px;
+  	padding-left: 33px;
+  	padding-right: 13px;
+}
+.menu2 li:first-child:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 7px;
+	left: 0;
+	height: 27px;
+	width: 25px;
+	background: url(../img/flag1.png) 0 0 no-repeat;
+}
+.menu2 li{
+	position: relative;
+  	float: left;
+  	list-style: none;
+  	color: #ffffff;
+}
+.menu2 li a{
+  	line-height: 36px;
+  	color: #ffffff;
+  	text-decoration: none;
+}
+.menu2 li:last-child a{
+	text-decoration: underline;
+}
+.menu2 li:last-child{
+	margin-left: 10px;
+	padding: 0 14px;
+}
+.menu2 li:hover{
 	border-right: solid 1px #449ad3;
 	border-left: solid 1px #449ad3;
 	border-bottom: solid 1px #449ad3;
-
-  	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,51b1dc+0,2e7ac4+100,2e7ac4+100 */
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,51b1dc+0,2e7ac4+100,2e7ac4+100 */
     background: rgb(30,87,153); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(81,177,220,1) 0%, rgba(46,122,196,1) 100%, rgba(46,122,196,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(0%,rgba(81,177,220,1)), color-stop(100%,rgba(46,122,196,1)), color-stop(100%,rgba(46,122,196,1))); /* Chrome,Safari4+ */
@@ -79,9 +102,16 @@ body{
     background: -ms-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(81,177,220,1) 0%,rgba(46,122,196,1) 100%,rgba(46,122,196,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(81,177,220,1) 0%,rgba(46,122,196,1) 100%,rgba(46,122,196,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
+} 
+.menu2 li:first-child:hover{
+	padding-left: 33px;
+  	padding-right: 12px;
+  	height: 35px;
+  	border-left: none;
 }
-.menu+p a{
-	color:white;
+.menu2 li:last-child:hover{
+	padding: 0 13px;
+  	height: 35px;
 }
 .wrapper{
 	position: relative;
