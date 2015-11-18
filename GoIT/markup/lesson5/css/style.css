@@ -27,7 +27,7 @@ body{
 	clear: both;
 }
 .menu{
-	margin-left: 535px;
+	float: right;
 }
 .menu li{
   	float: left;
@@ -44,13 +44,17 @@ body{
 	color:white;
 	background: #4eabda;
 }
-.header ul+div{
-	float: left;
+.header .line{
+	float: right;
 	width: 1px;
 	height: 31px;
 	background: #56a2dc;
 	margin-top: 2px;
 	margin-left: 11px;
+}
+.menu2{
+	float: right;
+	margin-right: 160px;
 }
 .menu2 li:first-child{
   	margin-left: 19px;
@@ -110,39 +114,40 @@ body{
 	padding: 0 13px;
   	height: 35px;
 }
+.menu2 li:first-child a:hover{
+	text-decoration: underline;
+}
+.menu2 li:last-child a:hover{
+	text-decoration: none;
+}
 .wrapper{
-	position: relative;
-	height: 1044px;
+	width: 1124px;
+	margin: 0 auto;
+	padding-bottom: 50px;
 }
 .container{
 	width: 560px;
-	height: 610px;
-	position: absolute;
-    bottom: 50%;
-    left: 50%;
-    margin-left: -280px;
-    margin-bottom: -305px;
+    margin: 213px auto 0;
+    padding-bottom: 21px;
 }
 .container .cadastre{
 	font-size: 24px;
 	color:white;
-	width: 347px;
 	height: 62px;
 	background: rgba( 0, 0, 0, 0.63);
-	padding-left: 213px;
 	line-height: 62px;
 	margin-bottom: 2px;
+	text-align: center;
 }
 .container form{
 	background: rgba( 0, 0, 0, 0.63);
-	width: 560px;
-	height: 515px;
 	padding-top: 35px;
+	padding-bottom: 20px;
 }
 input[type="text"], 
 input[type="password"]{
 	display: block;
-	margin-left: 140px;
+	margin: 0 auto;
 	padding-left: 19px;
 	margin-top: 16px;
 	width: 256px;
@@ -171,8 +176,10 @@ form button[type="submit"]{
 	height: 35px;
 	border-radius: 5px;
 	font-size: 14px;
-	margin-left: 205px;
+	margin: 0 auto;
 	margin-bottom: 15px;
+	cursor: pointer;
+	
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,50aedb+0,2e7ac4+100,2e7ac4+100 */
     background: rgb(30,87,153); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(80,174,219,1) 0%, rgba(46,122,196,1) 100%, rgba(46,122,196,1) 100%); /* FF3.6+ */
