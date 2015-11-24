@@ -44,8 +44,11 @@ body{
 	color:white;
 	background: #4eabda;
 }
-.header .line{
-	float: right;
+.menu:after{
+	content: '';
+	display: block;
+	position: relative;
+	float: left;
 	width: 1px;
 	height: 31px;
 	background: #56a2dc;
