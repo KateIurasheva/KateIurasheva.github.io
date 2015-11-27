@@ -160,8 +160,8 @@ body{
 		line-height: 28px;
 	}	
 	.radiobutton1{
-		bottom:-28px;
-		right: 136px;
+		top:-88px;
+		right: 103px;
 	}
 	.wraper--articles{
 		padding: 30px 0 70px 20px;
@@ -451,12 +451,12 @@ body{
 		width: 193px;
 		height: 304px;
 		background: url(../img/iphone480.png) 0 0 no-repeat;
-		top:-10px;
-		right: 26px;
+		top: 190px;
+		right: 12px;
 	}
 	.radiobutton1{				
-		bottom:-38px;
-		right: 190px;
+		top: -75px;
+		right: 180px;
 	}				
 	.wraper--articles{
 		padding: 35px 0 70px 20px;
@@ -709,12 +709,12 @@ body{
 		width: 274px;
 		height: 434px;
 		background: url(../img/iphone768.png) 0 0 no-repeat;
-		top:-20px;
-		right: 55px;
+		top: 220px;
+		right: 30px;
 	}
 	.radiobutton1{				
-		bottom:-55px;
-		right:150px;
+		top:-115px;
+		right:140px;
 	}
 	.wraper--articles{
 		padding: 79px 0 66px 20px;
@@ -889,6 +889,7 @@ body{
 	.container1{
 		background-color: rgba(0, 0, 0, 0.2);
 		margin-bottom: 168px;
+		overflow-x: hidden;
 	}
 	.wraper{
 		width: 960px;
@@ -937,12 +938,12 @@ body{
 		width: 274px;
 		height: 434px;
 		background: url(../img/iphone768.png) 0 0 no-repeat;
-		top:-20px;
+		top: 260px;
 		right: 70px;
 	}
 	.radiobutton1{
-		bottom:-110px;
-		right:160px;
+		top: -80px;
+		right: 165px;
 	}				
 	.wraper--articles{		
 		padding: 79px 0 66px 0;
@@ -1087,7 +1088,8 @@ body{
 }
 
 header{
-	margin: 0 auto;	
+	margin: 0 auto;
+	position: relative;	
 }
 .menu__item{
   	list-style: none;
@@ -1154,6 +1156,7 @@ header{
 }
 .wraper--articles{
 	margin: 0 auto;	
+	position: relative;
 }
 .wraper--articles .wraper__text{
 	font-size: 16px;
@@ -1335,4 +1338,10 @@ fieldset{
 }
 .footer__design span{
 	font-family: 'Open Sans Extrabold';
+}
+.wraper__title--article{
+	width: 180px;
+}
+.wraper__titley--prefooter{
+	width: 165px;
 }
