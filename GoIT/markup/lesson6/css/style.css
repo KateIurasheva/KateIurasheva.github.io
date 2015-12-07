@@ -33,19 +33,22 @@ header{
 	background: url(../img/telefon.png) no-repeat 7px 5px;
 	font-family: Arial;
 }
-.tel+form{
+.login{
 	float: left;
 	width: 490px;
 	height: 25px;
-	padding-left: 8px;
-	margin-bottom: 12px;
-	margin-left: 26px;
 	background-image: linear-gradient(#1f6787, #0c3357);
-	font-size: 11px;
 	border-radius: 5px;
 	box-shadow: 2px 3px 5px 0 #b4b4b4;
+	margin-left: 26px;
+	margin-bottom: 12px;
 }
-.tel+form .man{
+.login form{
+	float: left;
+	margin-left: 8px;
+	font-size: 11px;
+}
+.login form .man{
 	float: left;
 	width: 14px;
 	height: 18px;
@@ -53,7 +56,7 @@ header{
 	margin-right: 4px;
 	background: url(../img/man.png) no-repeat;
 }
-.tel+form input[type="text"], 
+.login form input[type="text"], 
 input[type="password"]{
 	display: block;
 	float: left;
@@ -65,21 +68,30 @@ input[type="password"]{
 	font-size: 11px;
 	line-height: 18px;
 }
-.tel+form a{
+ .login a{
 	display: block;
 	float: left;
-	margin-top: 6px;
+	margin-top: 8px;
 	text-decoration: none;
 	color: #ffffff;
 	line-height: 10px;
+	font-size: 10px;
 }
-.tel+form input[type="password"]+a{
+
+ .login form input[type="submit"]{
 	padding-right: 5px;
 	margin-right: 4px;
+	margin-top: 5px;
+	border: none;
+	background: none;
 	border-right: solid 1px #c0cdd7;
+	color: #ffffff;
 }
-.tel+form a:last-child{
+ .login a:last-child{
 	margin-left: 20px;
+	color: #ffffff;
+}
+.login a:hover, input[type="submit"]:hover{
 	text-decoration: underline;
 	color: #bfbfbf;
 }
@@ -101,9 +113,6 @@ input[type="password"]{
   	line-height: 19px;
   	text-decoration: none;
 }
-.photo{
-	height: 237px;
-}
 header nav{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#505860+0,3a4046+12,2d3236+13,010101+100 */
     background: rgb(80,88,96); /* Old browsers */
@@ -117,13 +126,13 @@ header nav{
 }
 nav{
 	height: 32px;
-	margin-top: 6px;
 	border-radius: 5px;
 	border: 1px solid #2d345b;
 	box-shadow: 1px 2px 4px 0 #50525e;
 }
 nav ul{
-	margin-left: 130px;
+	margin-right: 50px;
+	float: right;
 }
 nav ul li{
   	float: left;
@@ -155,7 +164,19 @@ nav li:hover a{
 }
 nav .basket{
 	float: right;
-	margin-right: 40px;
+	margin-right: 20px;
+
+}
+nav .basket:before{
+	content: '';
+	display: block;
+	position: relative;
+	float: left;
+	top: 6px;
+	left: 0px;
+	height: 17px;
+	width: 21px;
+	background: url(../img/basket.png) 0 0 no-repeat;
 }
 nav .basket a{
 	display: block;
@@ -169,13 +190,13 @@ nav .basket p{
 	font-size: 11px;
 	line-height: 26px;
 }
-nav .basket p:nth-child(3){
+nav .basket p:nth-child(2){
 	margin-left: 0;
 }
-nav .basket p:nth-child(even){
+nav .basket p:nth-child(odd){
 	color:#929b9f;
 }
-nav .basket p:nth-child(odd){
+nav .basket p:nth-child(even){
 	color:#0d5a8f;
 }
 .clearfix:after{
@@ -193,10 +214,15 @@ main .search{
 	font-family: Arial;
 	box-shadow: 3px 3px 5px 0 #999999;
 }
-main .search a{
+main .search input[type="submit"]{
 	float: right;
 	color: #154467;
 	font-style: italic;
+	border: none;
+	cursor: pointer;
+	background: none;
+	text-decoration: underline;
+	font-size: 14px;
 }
 main .search fieldset{
 	border: none;
@@ -229,7 +255,7 @@ main .search span{
 .form1 dt, dd{
 	display: inline-block;
 }
-.form1 a{
+.form1 input[type="submit"]{
 	margin-right: 25px;
 }
 .form1 form .left1{
@@ -258,13 +284,13 @@ main .search span{
 	font-size: 10px;
 }
 .form1 .marka{
-	margin-left: 17px;
+	margin-left: 20px;
 }
 .form1 .model{
-	margin-left: 21px;
+	margin-left: 25px;
 }
 .form1 .year{
-	margin-left: 12px;
+	margin-left: 14px;
 }
 						/*форма 2*/
 .form2{
@@ -288,15 +314,16 @@ main .search span{
 .form2 dt, dd{
 	display: inline-block;
 }
-.form2 a{
+.form2 input[type="submit"]{
 	margin-right: 15px;
-	line-height: 10px;
+	margin-top: -3px;
 }
 .form2 .size{
 	width: 50px;
 }
 .form2 .r{
 	width: 45px;
+	margin-left: 3px;
 }
 .form2 dl{
 	margin-top: 5px;
@@ -339,10 +366,10 @@ main .search span{
 }
 .form3 .second{
 	width: 50px;
-	margin-left: 30px;
+	margin-left: 31px;
 }
 .form3 .third{
-	margin-left: 30px;
+	margin-left: 37px;
 }
 .form3 dt, dd{
 	vertical-align: middle;
@@ -353,7 +380,7 @@ main .search span{
 .form3 .right dl{
 	margin-top: 5px;
 }
-.form3 a{
+.form3 input[type="submit"]{
 	margin-right: 20px;
 	margin-top: 3px;
 }
@@ -429,6 +456,9 @@ main .container .content{
 	color: #206988;
 	font-size: 15px;
  }
+  main .container .content div a:non(:first-child){
+	display: block;
+ }
    main .container .content div p{
 	color: #1f2528;
 	font-size: 13px;
@@ -481,11 +511,11 @@ main .container .content{
  main .container .brand label{
 	display: block;
 	margin-bottom: 11px;
-	margin-left: 23px;
+	margin-left: 26px;
 	font-size: 13px;
  }
  main .container .brand label input[type="checkbox"]{
-	margin-right: 12px;
+	margin-right: 9px;
  }
  main .container .brand input[type="submit"]{
  	margin-top: 9px;
@@ -498,6 +528,7 @@ main .container .content{
  	border-radius: 10px;
  	border: none;
  	box-shadow: 1px 2px 4px 0 #bfbfbf;
+ 	cursor: pointer;
  	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,1c5e7e+23,1b5a7b+23,0c3357+100 */
     background: rgb(31,103,135); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(31,103,135,1) 0%, rgba(28,94,126,1) 23%, rgba(27,90,123,1) 23%, rgba(12,51,87,1) 100%); /* FF3.6+ */
@@ -516,6 +547,9 @@ main .container .content{
  	float: left;
  	margin-right: 13px;
  	list-style: none;
+ }
+ main .logos ul li a{
+ 	display: block;
  }
  footer{
  	height: 88px;

@@ -10,14 +10,16 @@
 		<header>
 			<div class="up clearfix">
 				<div class="tel">(044)123-45-67 (044)567-89-10</div>
-				<form action="#">
-					<div class="man"></div>
-					<input type="text" name="login" placeholder="логин">
-					<input type="password" name="password" placeholder="пароль">
-					<a href="#">вход</a>
+				<div class="login">
+					<form action="#">
+						<div class="man"></div>
+						<input type="text" name="login" placeholder="логин" required>
+						<input type="password" name="password" placeholder="пароль" required>
+						<input type="submit" value="вход">
+					</form>
 					<a href="#">регистрация</a>
-					<a href="#">забыл пароль?</a>
-				</form>
+					<a href="#">забыли пароль?</a>
+				</div>
 				<ul class="icons">
 					<li><a href="#"><img src="img/home.png" alt="home"></a></li>
 					<li><a href="#"><img src="img/map.png" alt="map"></a></li>
@@ -26,6 +28,12 @@
 			</div>
 			<div class="photo"><img src="img/header.png" alt="photo"></div>
 			<nav class="clearfix">
+				<div class="basket">
+					<p>товаров:</p>
+					<p>0</p>
+					<p>на сумму:</p>
+					<p>0,00 грн.</p>
+				</div>
 				<ul>
 					<li><a href="">О компани</a></li>
 					<li><a href="">Оплата</a></li>
@@ -33,16 +41,10 @@
 					<li><a href="">Статьи</a></li>
 					<li><a href="">Контакты</a></li>
 				</ul>
-				<div class="basket">
-					<a href=""><img src="img/basket.png" alt="basket"></a>
-					<p>товаров:</p>
-					<p>0</p>
-					<p>на сумму:</p>
-					<p>0,00 грн.</p>
-				</div>
 			</nav>
 		</header>
 		<main>
+			<div class="forms clearfix">
 			<div class="form1 search">
 				<div class="title">Поиск по автомобилю</div>
 				<form action="#" class="clearfix">
@@ -52,7 +54,10 @@
 							<dt>Марка<span>авто:</span></dt>
 							<dd class="marka">
 								<select name="search" id="1">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -60,7 +65,10 @@
 							<dt>Модель<p>автомобиля:</p></dt>
 							<dd  class="model">
 								<select name="search" id="2">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -68,7 +76,10 @@
 							<dt>Год выпуска<p>автомобиля:</p></dt>
 							<dd class="year">
 								<select name="search" id="3">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -76,7 +87,10 @@
 							<dt>Комплектация:</dt>
 							<dd>
 								<select name="search" id="4">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -87,7 +101,10 @@
 							<dt>Марка<span>авто:</span></dt>
 							<dd class="marka">
 								<select name="search" id="5">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -95,7 +112,10 @@
 							<dt>Модель<p>автомобиля:</p></dt>
 							<dd class="model">
 								<select name="search" id="6">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -103,7 +123,10 @@
 							<dt>Год выпуска<p>автомобиля:</p></dt>
 							<dd class="year">
 								<select name="search" id="7">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -111,12 +134,15 @@
 							<dt>Комплектация:</dt>
 							<dd>
 								<select name="search" id="8">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
 					</fieldset>
-					<a href="#">поиск...</a>
+					<input type="submit" value="поиск...">
 				</form>
 			</div>
 			<div class="form2 search">
@@ -128,13 +154,18 @@
 							<dd>
 								<select name="search" id="9" class="size">
 									<option value="145" selected>145</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 								<span>/</span>
 							</dd>
-							
 							<dd>
 								<select name="search" id="10" class="size">
-									<option></option>
+									<option value="1"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -143,6 +174,9 @@
 							<dd>
 								<select name="search" id="11" class="r">
 									<option value="12" selected>12</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -155,7 +189,7 @@
 							</dd>
 						</dl>
 					</fieldset>
-					<a href="#">поиск...</a>
+					<input type="submit" value="поиск...">
 				</form>
 			</div>
 			<div class="form3 search">
@@ -167,6 +201,9 @@
 							<dd>
 								<select name="search" id="12" class="first">
 									<option value="14" selected>14</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -175,6 +212,9 @@
 							<dd>
 								<select name="search" id="13" class="second">
 									<option value="3" selected>3</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -183,6 +223,9 @@
 							<dd>
 								<select name="search" id="14" class="third">
 									<option value="12" selected>12</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -193,6 +236,9 @@
 							<dd>
 								<select name="search" id="15">
 									<option value="12" selected>12</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
@@ -201,12 +247,16 @@
 							<dd>
 								<select name="search" id="16">
 									<option value="12" selected>12</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</dd>
 						</dl>
 					</fieldset>
-					<a href="#">поиск...</a>
+					<input type="submit" value="поиск...">
 				</form>
+				</div>
 			</div>
 			<div class="container clearfix">
 				<div class="catalog clearfix">
@@ -239,62 +289,62 @@
 					</ul>
 				</div>
 				<div class="content clearfix">
-					<div>
+					<div class="product">
 						<p><a href="">Goodyear</a></p>
 						<p>Ultra Grip Extreme</p>
 						<a href=""><img src="img/goodyear.png" alt="goodyear"></a>
 						<p class="price">90.00<span>грн.</span></p>
 					</div>
-					<div>
+					<div class="product">
 						<p><a href="">Nokian</a></p>
 						<p>Hakkapeliitta R</p>
 						<a href=""><img src="img/nokian.png" alt="nokian"></a>
 						<p class="price">115.00<span>грн.</span></p>
 					</div>
-					<div>
+					<div class="product">
 						<p><a href="">Hankook</a></p>
 						<p>K 708 155/65 R14</p>
 						<a href=""><img src="img/hankook.png" alt="hankook"></a>
 						<p class="price">393.00<span>грн.</span></p>
 					</div>
-					<div>
+					<div class="product">
 						<p><a href="">Goodyear</a></p>
 						<p>Ultra Grip Extreme</p>
 						<a href=""><img src="img/goodyear.png" alt="goodyear"></a>
 						<p class="price">90.00<span>грн.</span></p>
 					</div>
-					<div>
+					<div class="product">
 						<p><a href="">Nokian</a></p>
 						<p>Hakkapeliitta R</p>
 						<a href=""><img src="img/nokian.png" alt="nokian"></a>
 						<p class="price">115.00<span>грн.</span></p>
 					</div>
-					<div>
+					<div class="product">
 						<p><a href="">Hankook</a></p>
 						<p>K 708 155/65 R14</p>
 						<a href=""><img src="img/hankook.png" alt="hankook"></a>
 						<p class="price">393.00<span>грн.</span>.</p>
 					</div>
-					<div>
+					<div class="product">
 						<p><a href="">Goodyear</a></p>
 						<p>Ultra Grip Extreme</p>
 						<a href=""><img src="img/goodyear.png" alt="goodyear"></a>
 						<p class="price">90.00<span>грн.</span></p>
 					</div>
-					<div>
+					<div class="product">
 						<p><a href="">Nokian</a></p>
 						<p>Hakkapeliitta R</p>
 						<a href=""><img src="img/nokian.png" alt="nokian"></a>
 						<p class="price">115.00<span>грн.</span></p>
 					</div>
-					<div>
+					<div class="product">
 						<p><a href="">Hankook</a></p>
 						<p>K 708 155/65 R14</p>
 						<a href=""><img src="img/hankook.png" alt="hankook"></a>
 						<p class="price">393.00<span>грн.</span></p>
 					</div>
 				</div>
-				<div class="brand">
+				<div class="brand clearfix">
 					<form action="#">
 						<p>Бренды:</p>
 						<a href="">Шины</a>
