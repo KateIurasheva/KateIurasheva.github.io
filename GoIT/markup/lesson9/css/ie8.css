@@ -43,7 +43,7 @@ body{
 	display: table;
 	clear: both;
 }
-	header{
+	.header{
 		margin: 0 auto;
 		position: relative;
 		width: 960px;
@@ -53,6 +53,7 @@ body{
 	.header__logo{
 		margin-top: 48px;
 		float: left;
+		
 	}
 	.menu{
 		float: right;
@@ -62,7 +63,7 @@ body{
   		float: left;
   		list-style: none;
 	}
-	.menu__item:not(:last-child){
+	.menu__item{
   		margin-right: 50px;
 	}
 	.menu__link{
@@ -80,7 +81,7 @@ body{
 		display: none;
 	}
 	.container1{
-		background-color: rgba(0, 0, 0, 0.2);
+		background: url(../img/ie8-1.png) 0 0 repeat-x;
 		margin-bottom: 168px;
 		overflow-x: hidden;
 	}
@@ -152,8 +153,10 @@ body{
 	list-style: none;
 	width:15px;
 	height: 15px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
-	background: rgba(0, 0, 0, 0.3);
+	background: #41444c;
 	margin-right: 5px;
 }
 .radiobutton1__item a{
@@ -163,6 +166,8 @@ body{
 	width:11px;
 	height: 11px;
 	background: rgba(0, 0, 0, 0);
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
 }
 .radiobutton1__item--checked a{
@@ -172,10 +177,12 @@ body{
 	width:11px;
 	height: 11px;
 	background: #ffffff;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
 	}     
 	.container2{
-	background-image: linear-gradient(#745083, #33253a);
+	background: #33253a;
 	border-top: solid 1px #33253a;
 	border-bottom: solid 1px #1d2f37;
 	}			
@@ -214,12 +221,13 @@ body{
 	}
 	.talk{
 		background-position: -33px 0;
+		margin-left: 25px;
 	}
 	.company{
 		margin-left: 12px;
 	}
 	.music{
-		margin-left: 41px;
+		margin-left: 30px;
 		background-position: -66px 0;
 	}
 	.wraper__link{
@@ -243,7 +251,7 @@ body{
 	}
 	.wraper--reviews{
 		width: 960px;
-		padding: 100px 0 20px;
+		padding: 100px 0 70px;
 		margin: 0 auto;
 		position: relative;
 	}
@@ -349,7 +357,7 @@ body{
 	}	
 	.radiobutton2{
 		position: absolute;
-		bottom:75px;
+		bottom:60px;
 		left:190px;
 	}	
 	.radiobutton2__item{
@@ -357,6 +365,8 @@ body{
 	list-style: none;
 	width:17px;
 	height: 17px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
 	background: #ffffff;
 	margin-right: 5px;
@@ -369,6 +379,8 @@ body{
 	width:11px;
 	height: 11px;
 	background: #ffffff;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
 }
 .radiobutton2__item--checked a{
@@ -378,6 +390,8 @@ body{
 	width:11px;
 	height: 11px;
 	background: #4d4d4d;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
 }
 	.container5{
@@ -399,8 +413,11 @@ body{
 		width: 280px;
 		margin-top: 0;
 	}
-	.wraper--prefooter .wraper__box:not(:last-child){
+	.wraper--prefooter .wraper__box{
 		margin-right: 60px;
+	}
+	.wraper--prefooter .wraper__box--last{
+		margin-right: 0px;
 	}
 	.wraper--prefooter .wraper__title{
 		font-size: 30px;
@@ -423,24 +440,24 @@ body{
 	.menu--footer{
 		display: block;
 	}
-	.menu--footer .menu__item--footer:not(:last-child){
+	.menu--footer .menu__item--footer{
 		margin-right: 45px;
 	}
 	.wraper__copyright{
-	font-size: 16px;
-	color: #c5c5c5;
-	font-style: italic;
-	font-family: Georgia;
-	text-shadow: 2px 2px 0 #ffffff;
-	margin-top: 15px;
-}
+		font-size: 16px;
+		color: #c5c5c5;
+		font-style: italic;
+		font-family: Georgia;
+		text-shadow: 2px 2px 0 #ffffff;
+		margin-top: 15px;
+	}
 	.container6{
 		background: url(../img/footer960.png) 0 0 no-repeat;
 		-webkit-box-shadow: inset 0px 10px 27px -8px rgba(98,95,97,1);
 		-moz-box-shadow: inset 0px 10px 27px -8px rgba(98,95,97,1);
 		box-shadow: inset 0px 10px 27px -8px rgba(98,95,97,1);
 	}
-	footer{
+	.footer{
 		width: 960px;
 		margin: 0 auto;
 		height: 114px;
@@ -478,8 +495,8 @@ body{
 .wraper__titley--prefooter{
 	width: 165px;
 }
-	.footer__design{
-		float: right;
-		margin-top: 50px;
-	}
+.footer__design{
+	float: right;
+	margin-top: 50px;
+}
 
