@@ -1,27 +1,33 @@
 $(function() {
-    var k = 0;  
+    var showHint = false;  
 
     $('button').on('click', (function(){
-        if (k===0) {
+        if (!showHint) {
             for (var i = 1; i < 4; i++) {
                 $('.box:nth-child(' + i + ')'+'> .field')
                 .append($('<span>' + ($('.box:nth-child(' + i + ')').find('.inpt').attr('title')) + '</span>').addClass('tooltips'));
                 };
-            k++;
+
+                showHint = true;
+
+                $('span').animate({
+                opacity: 1
+                }, 500)
+
                 } else {
                     $('span').remove();
-                    k = 0;
+                    showHint = false;
                 };
-        //         $('span').animate({
-        //     opacity: 1
-        // }, 500)
         }));
     
     $('.field').hover(
         function() {
         $('span').remove();
-        k=0;
+        showHint = false;
         $(this).append($('<span>' + ($(this).find('.inpt').attr('title')) + '</span>').addClass('tooltips'));
+        $('span').animate({
+        opacity: 1
+        }, 500)
         }, function() {
             $(this).find( 'span:last' ).remove();
         }
