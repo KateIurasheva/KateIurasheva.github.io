@@ -1,5 +1,4 @@
 (function($) {
-  // console.log('hi');
     $(function() {
         $('.jcarousel').jcarousel({
              animation: 'slow',
